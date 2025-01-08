@@ -1,21 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './Home';
-import GitHub from './GitHub';
-import Resume from './Resume';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import GitHub from './pages/GitHub';
+import Resume from './pages/Resume';
 import './App.css';
 
 const App = () => {
   return (
-    <Router>
-      <header>
-        <h1>Computer Science Portfolio</h1>
-      </header>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/github">GitHub</Link>
-        <Link to="/resume">Resume</Link>
-      </nav>
+    <div>
+      <Header />
+      <Navigation />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,10 +20,8 @@ const App = () => {
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </main>
-      <footer>
-        <p>© 2025 Your Name. All rights reserved.</p>
-      </footer>
-    </Router>
+      <Footer />
+    </div>
   );
 };
 

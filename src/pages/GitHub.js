@@ -1,4 +1,4 @@
-// GitHub.js
+// src/pages/GitHub.js
 import React from 'react';
 
 const GitHub = () => {

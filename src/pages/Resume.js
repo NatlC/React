@@ -1,4 +1,4 @@
-// Resume.js
+// src/pages/Resume.js
 import React from 'react';
 
 const Resume = () => {
