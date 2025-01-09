@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/React/static/css/main.b99e61fb.css",
-    "main.js": "/React/static/js/main.5c8b6eb1.js",
+    "main.js": "/React/static/js/main.55b7dc7e.js",
     "static/media/budgetMe.png": "/React/static/media/budgetMe.58e57c0ca1977c4079f7.png",
     "static/media/ymcaLogo.png": "/React/static/media/ymcaLogo.09efe852c6ed64c28062.png",
     "static/media/education logo.png": "/React/static/media/education logo.14506e987316ca98de00.png",
     "static/media/fgf.jpg": "/React/static/media/fgf.fe04f7bab010cdad69ce.jpg",
+    "static/media/ecofix_solutions.png": "/React/static/media/ecofix_solutions.450afb8518b53ca122a0.png",
     "static/media/toronto-logo.png": "/React/static/media/toronto-logo.a4efce0cf5204837dc3c.png",
     "index.html": "/React/index.html",
     "main.b99e61fb.css.map": "/React/static/css/main.b99e61fb.css.map",
-    "main.5c8b6eb1.js.map": "/React/static/js/main.5c8b6eb1.js.map"
+    "main.55b7dc7e.js.map": "/React/static/js/main.55b7dc7e.js.map"
   },
   "entrypoints": [
     "static/css/main.b99e61fb.css",
-    "static/js/main.5c8b6eb1.js"
+    "static/js/main.55b7dc7e.js"
   ]
 }
