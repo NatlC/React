@@ -10,6 +10,7 @@ import experienceIdeologicalSystemsImage from '../images/idea.png';
 import experienceQuadientCanadaImage from '../images/quadientLogo.png';
 import projectsImage from '../images/ecofix_solutions.png';
 import volunteerImage from '../images/ymcaLogo.png';
+import projectsImage2 from '../images/Galaga.png';
 
 const Home = () => {
   return (
@@ -103,20 +104,6 @@ const Home = () => {
       </section>
 
       <section className="section-container">
-        <img src={projectsImage} alt="Academic Projects" className="section-image" />
-        <div className="section-text">
-          <h2>Academic Projects</h2>
-          <h3>Shopping Application, 2022</h3>
-          <p>• Developed a shopping application using object-oriented Java with well-documented, efficient, scalable, reliable, and reusable functions and libraries.</p>
-          <p>• Leveraged and followed software testing methodologies to ensure the new application runs efficiently and bug-free.</p>
-
-          <h3>Arcade game Application, 2021</h3>
-          <p>• Developed an interactive arcade-style game with storyboard, mockup, and prototype.</p>
-          <p>• Lead bi-weekly team calls with agile project management to ensure development and testing complete on time with good quality and performance.</p>
-        </div>
-      </section>
-
-      <section className="section-container">
         <img src={volunteerImage} alt="Volunteer Experience" className="section-image" />
         <div className="section-text">
           <h2>Volunteer Experience</h2>
@@ -134,6 +121,25 @@ const Home = () => {
           <p>• YMCA Volunteer Hall of Fame of the month award (2016): Best volunteer of the month.</p>
         </div>
       </section>
+
+      <section className="section-container">
+        <div className="section-text">
+          <h2>Academic Projects</h2>
+          <h3>Shopping Application, 2022</h3>
+          <p>• Developed a shopping application using object-oriented Java with well-documented, efficient, scalable, reliable, and reusable functions and libraries.</p>
+          <p>• Leveraged and followed software testing methodologies to ensure the new application runs efficiently and bug-free.</p>
+
+          <h3>Arcade game Application, 2021</h3>
+          <p>• Developed an interactive arcade-style game with storyboard, mockup, and prototype.</p>
+          <p>• Lead bi-weekly team calls with agile project management to ensure development and testing complete on time with good quality and performance.</p>
+        </div>
+      </section>
+      
+      <section className="section-container projects-section">
+        <img src={projectsImage} alt="Academic Projects" className="section-image project-image" />
+        <img src={projectsImage2} alt="Academic Projects" className="section-image project-image" />
+      </section>
+
     </div>
   );
 };
