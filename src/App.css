@@ -33,14 +33,6 @@ nav a:hover {
   color: #2543cc;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 h2, h3 {
   color: #282c34;
 }
@@ -52,7 +44,7 @@ footer {
   text-align: center;
 }
 
-.about-container {
+.section-container {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -62,32 +54,32 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-image {
+.section-image {
   width: 150px;
-  border-radius: 50%;
+  border-radius: 8px;
   margin-right: 20px;
 }
 
-.about-text {
-  max-width: 600px;
+.section-text {
+  max-width: 70%;
 }
 
 /* Responsive Design */
 
 @media (max-width: 768px) {
-  .about-container {
+  .section-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .profile-image {
+  .section-image {
     margin-right: 0;
     margin-bottom: 20px;
     width: 100px; /* Adjust size for smaller screens */
   }
 
-  .about-text {
-    max-width: 100%;
+  .section-text {
+    max-width: 80%;
   }
 
   nav {
