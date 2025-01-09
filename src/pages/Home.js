@@ -125,7 +125,7 @@ const Home = () => {
       <section className="section-container">
         <div className="section-text">
           <h2>Academic Projects</h2>
-          <h3>Shopping Application, 2022</h3>
+          <h3>Shopping Application, 2024</h3>
           <p>• Developed a shopping application using object-oriented Java with well-documented, efficient, scalable, reliable, and reusable functions and libraries.</p>
           <p>• Leveraged and followed software testing methodologies to ensure the new application runs efficiently and bug-free.</p>
 
@@ -136,9 +136,14 @@ const Home = () => {
       </section>
     
       <section className="section-container projects-section">
-        <img src={projectsImage} alt="Academic Projects" className="section-image project-image-2" />
-        <img src={projectsImage2} alt="Academic Projects" className="section-image project-image-2" />
+        <a href="https://github.com/NatlC/Client-Reward-Engagement-Web-Portal" target="_blank" rel="noopener noreferrer" className="project-link">
+          <img src={projectsImage} alt="Academic Projects" className="section-image project-image-2" />
+        </a>
+        <a href="https://github.com/NatlC/Python-Galaga-Game-Dev" target="_blank" rel="noopener noreferrer" className="project-link">
+          <img src={projectsImage2} alt="Academic Projects" className="section-image project-image-2" />
+        </a>
       </section>
+
     </div>
   );
 };
