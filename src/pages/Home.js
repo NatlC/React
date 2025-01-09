@@ -134,12 +134,11 @@ const Home = () => {
           <p>• Lead bi-weekly team calls with agile project management to ensure development and testing complete on time with good quality and performance.</p>
         </div>
       </section>
-      
+    
       <section className="section-container projects-section">
-        <img src={projectsImage} alt="Academic Projects" className="section-image project-image" />
-        <img src={projectsImage2} alt="Academic Projects" className="section-image project-image" />
+        <img src={projectsImage} alt="Academic Projects" className="section-image project-image-2" />
+        <img src={projectsImage2} alt="Academic Projects" className="section-image project-image-2" />
       </section>
-
     </div>
   );
 };
