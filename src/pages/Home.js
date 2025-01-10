@@ -2,6 +2,7 @@
 import React from 'react';
 // import summaryImage from '../images/summary.png';
 // import technicalSkillsImage from '../images/technical-skills.png';
+import './Home.css'
 import educationImage from '../images/education logo.png';
 import experienceFGFBrandsImage from '../images/fgf.jpg';
 import experienceCityTorontoImage from '../images/toronto-logo.png';
@@ -48,7 +49,6 @@ const Home = () => {
       <section className="section-container">
         <img src={experienceFGFBrandsImage} alt="IT Help Desk Co-op, FGF Brands" className="section-image" />
         <div className="section-text">
-          <h2>Work Experience</h2>
           <h3>IT Help Desk Co-op, FGF Brands, Toronto, ON, May 2023 – May 2024</h3>
           <p>• Diagnosed and resolved hardware and software issues for printers, laptops, phones including Office 365 applications and Windows operating system, utilizing reliability history and performance monitor and event viewer.</p>
           <p>• Utilized active directory to manage user account’s credentials and access permissions for folders, distribution lists and remote desktop connections.</p>
