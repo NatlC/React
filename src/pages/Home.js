@@ -1,5 +1,5 @@
 // src/pages/Home.js
-import React from 'react';
+import React, { useEffect } from 'react';
 // import summaryImage from '../images/summary.png';
 // import technicalSkillsImage from '../images/technical-skills.png';
 import './Home.css'
@@ -14,8 +14,33 @@ import volunteerImage from '../images/ymcaLogo.png';
 import projectsImage2 from '../images/Galaga.png';
 
 const Home = () => {
+  useEffect(() => {
+    const setBannerHeight = () => {
+      const banner = document.querySelector('.banner-container');
+      banner.style.height = `${window.innerHeight}px`;
+    };
+
+    // Set banner height on initial load
+    setBannerHeight();
+
+    // Update banner height on window resize
+    window.addEventListener('resize', setBannerHeight);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', setBannerHeight);
+    };
+  }, []);
+
   return (
     <div>
+    <section className="banner-container">
+      <div className="banner-content">
+        <h1 className="banner-name">Nathan Chan</h1>
+        <p className="banner-description">Aspiring Computer Scientist & Web Developer</p>
+      </div>
+    </section>
+
       {/* <section className="section-container">
         <img src={summaryImage} alt="Summary" className="section-image" />
         <div className="section-text">

@@ -1,7 +1,6 @@
 // src/App.js
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -11,7 +10,6 @@ import './App.css';
 const App = () => {
   return (
     <div>
-      <Header />
       <Navigation />
       <main>
         <Routes>

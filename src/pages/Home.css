@@ -6,6 +6,53 @@ body {
     color: #111827; /* Neutral Blue */
   }
   
+  /* Banner Section */
+  .banner-container {
+    background: #1E3A8A; /* Primary Blue */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    height: 100vh; /* Full height of the window */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .banner-name {
+    font-size: 4em; /* Increased Font Size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Increased Margin Bottom */
+  }
+  
+  .banner-description {
+    font-size: 2em; /* Increased Font Size */
+    margin-bottom: 20px;
+  }
+  
+  .banner-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .banner-link {
+    color: #60A5FA; /* Accent Blue */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .banner-link:hover {
+    color: #93C5FD; /* Light Blue */
+  }
+  
+  /* Section Styling */
   .section-container {
     display: flex;
     align-items: center;
@@ -35,6 +82,7 @@ body {
   .section-text {
     flex-grow: 1;
     max-width: calc(100% - 220px); /* Adjust based on image size and desired space */
+    text-align: left; /* Align text to the left */
   }
   
   .section-text p {
@@ -46,6 +94,8 @@ body {
   .section-text h3 {
     color: #1E3A8A; /* Primary Blue */
     font-weight: bold;
+    text-align: left; /* Align titles to the left */
+    margin-bottom: 10px; /* Add space below titles */
   }
   
   /* Specific Styles for Projects Section */
