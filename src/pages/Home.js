@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 // import summaryImage from '../images/summary.png';
 // import technicalSkillsImage from '../images/technical-skills.png';
+import bannerImage from '../images/wormhole.jpg'; // Import your banner image
 import './Home.css'
 import educationImage from '../images/education logo.png';
 import experienceFGFBrandsImage from '../images/fgf.jpg';
@@ -34,34 +35,13 @@ const Home = () => {
 
   return (
     <div>
-    <section className="banner-container">
-      <div className="banner-content">
-        <h1 className="banner-name">Nathan Chan</h1>
-        <p className="banner-description">Aspiring Computer Scientist & Web Developer</p>
-      </div>
-    </section>
-
-      {/* <section className="section-container">
-        <img src={summaryImage} alt="Summary" className="section-image" />
-        <div className="section-text">
-          <h2>Summary of Qualifications</h2>
-          <p>• One full year of IT service management experience resolving incidents within SLA’s such as Office 365 and business applications. Installed new and supported computers, printers, laptops, phones, and RF guns on different campus and remotely. Daily user account management.</p>
-          <p>• Managed confidential company data through customized spreadsheet processing with barcode integration.</p>
-          <p>• Demonstrated problem-solving skills by troubleshooting code using test cases, IDE tools, ChatGPT and Stack Overflow.</p>
-        </div>
-      </section>
-
-      <section className="section-container">
-        <img src={technicalSkillsImage} alt="Technical Skills" className="section-image" />
-        <div className="section-text">
-          <h2>Technical Skills</h2>
-          <p>• Computer Languages: Python, Java, C, Bash, HTML, CSS, JavaScript, React, Perl, PHP, MySQL, Asp and Ruby.</p>
-          <p>• IT Tools: ServiceNow, Active Directory, Event Viewer, Reliability history, Performance Monitor.</p>
-          <p>• Development Tools: GitHub, VSCode, Eclipse, SQL Developer, MySQL Workbench.</p>
-          <p>• Microsoft Office Suite: Word, Excel, PowerPoint and Outlook.</p>
-          <p>• Video Conference Tools: Teams, Zoom and Webex.</p>
-        </div>
-      </section> */}
+        <section className="banner-container">
+          <img src={bannerImage} alt="Banner Image" className="banner-image" />
+          <div className="banner-text">
+            <h1 className="banner-name">Nathan Chan</h1>
+            <p className="banner-description">Aspiring Computer Scientist & Web Developer</p>
+          </div>
+        </section>
 
       <section className="section-container">
         <img src={educationImage} alt="Education" className="section-image" />
