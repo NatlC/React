@@ -21,22 +21,38 @@ const Home = () => {
       banner.style.height = `${window.innerHeight}px`;
     };
 
-    // Set banner height on initial load
     setBannerHeight();
-
-    // Update banner height on window resize
     window.addEventListener('resize', setBannerHeight);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', setBannerHeight);
+    };
+  }, []);
+
+  useEffect(() => {
+    const banner = document.querySelector('.banner-container');
+    const cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
+
+    const moveCursor = (e) => {
+      const { clientX: x, clientY: y } = e;
+      cursor.style.left = `${x}px`;
+      cursor.style.top = `${y}px`;
+    };
+
+    banner.addEventListener('mousemove', moveCursor);
+
+    return () => {
+      banner.removeEventListener('mousemove', moveCursor);
+      document.body.removeChild(cursor);
     };
   }, []);
 
   return (
     <div>
         <section className="banner-container">
-          <img src={bannerImage} alt="Banner Image" className="banner-image" />
+          <img src={bannerImage} alt="Banner" className="banner-image" />
           <div className="banner-text">
             <h1 className="banner-name">Nathan Chan</h1>
             <p className="banner-description">Aspiring Computer Scientist & Web Developer</p>
