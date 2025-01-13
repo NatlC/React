@@ -10,6 +10,7 @@
 /* Font Family */
 body {
   font-family: Arial, sans-serif;
+  font-size: 15px;
   background: #E0F2FE; /* Lighter Blue */
   color: #111827; /* Neutral Blue */
 }
