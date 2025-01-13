@@ -54,8 +54,7 @@ body {
   width: 20px; /* Smaller size */
   height: 20px; /* Smaller size */
   border-radius: 50%;
-  background-color: rgba(60, 120, 240, 0.7); /* Blue color */
-  border: 2px solid rgba(60, 120, 240, 1); /* Solid border */
+  background: radial-gradient(circle, white 0%, blue 100%); /* Gradient from white to blue */
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease, background-color 0.3s ease;

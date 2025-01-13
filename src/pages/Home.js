@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import bannerImage1 from '../images/wormhole.jpg'; // Import your banner images
+import bannerImage1 from '../images/glacier2.jpg'; // Import your banner images
 import bannerImage2 from '../images/rostyslav-savchyn-O22z_2IXdWY-unsplash.jpg';
-import bannerImage3 from '../images/glacier2.jpg';
+import bannerImage3 from '../images/wormhole.jpg';
 import educationImage from '../images/education logo.png';
 import experienceFGFBrandsImage from '../images/fgf.jpg';
 import experienceCityTorontoImage from '../images/toronto-logo.png';
