@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
-import bannerImage from '../images/wormhole.jpg'; // Import your banner image
-import './Home.css';
+import React, { useEffect, useState } from 'react';
+import bannerImage1 from '../images/wormhole.jpg'; // Import your banner images
+import bannerImage2 from '../images/rostyslav-savchyn-O22z_2IXdWY-unsplash.jpg';
+import bannerImage3 from '../images/glacier2.jpg';
 import educationImage from '../images/education logo.png';
 import experienceFGFBrandsImage from '../images/fgf.jpg';
 import experienceCityTorontoImage from '../images/toronto-logo.png';
@@ -10,8 +11,12 @@ import experienceQuadientCanadaImage from '../images/quadientLogo.png';
 import projectsImage from '../images/ecofix_solutions.png';
 import volunteerImage from '../images/ymcaLogo.png';
 import projectsImage2 from '../images/Galaga.png';
+import './Home.css';
 
 const Home = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [bannerImage1, bannerImage2, bannerImage3];
+
   useEffect(() => {
     const setBannerHeight = () => {
       const banner = document.querySelector('.banner-container');
@@ -81,10 +86,18 @@ const Home = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div>
       <section className="banner-container">
-        <img src={bannerImage} alt="Banner" className="banner-image" />
+        <img src={images[currentImage]} alt="Banner" className="banner-image" />
         <div className="banner-text">
           <h1 className="banner-name">Nathan Chan</h1>
           <p className="banner-description">Aspiring Computer Scientist & Web Developer</p>
