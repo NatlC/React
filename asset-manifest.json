@@ -1,7 +1,9 @@
 {
   "files": {
     "main.css": "/React/static/css/main.250d9dfb.css",
-    "main.js": "/React/static/js/main.3049bce8.js",
+    "main.js": "/React/static/js/main.55f94165.js",
+    "static/media/glacier2.jpg": "/React/static/media/glacier2.294ac2924d5e8df28d7f.jpg",
+    "static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.jpg": "/React/static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.95f5d399d879e41c2c5c.jpg",
     "static/media/budgetMe.png": "/React/static/media/budgetMe.58e57c0ca1977c4079f7.png",
     "static/media/ymcaLogo.png": "/React/static/media/ymcaLogo.09efe852c6ed64c28062.png",
     "static/media/wormhole.jpg": "/React/static/media/wormhole.4a3f4b7f91c7381d734c.jpg",
@@ -12,10 +14,10 @@
     "static/media/toronto-logo.png": "/React/static/media/toronto-logo.a4efce0cf5204837dc3c.png",
     "index.html": "/React/index.html",
     "main.250d9dfb.css.map": "/React/static/css/main.250d9dfb.css.map",
-    "main.3049bce8.js.map": "/React/static/js/main.3049bce8.js.map"
+    "main.55f94165.js.map": "/React/static/js/main.55f94165.js.map"
   },
   "entrypoints": [
     "static/css/main.250d9dfb.css",
-    "static/js/main.3049bce8.js"
+    "static/js/main.55f94165.js"
   ]
 }
