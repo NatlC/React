@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.b046bba9.css",
-    "main.js": "/React/static/js/main.a64243c3.js",
+    "main.css": "/React/static/css/main.ca0dafb6.css",
+    "main.js": "/React/static/js/main.3049bce8.js",
     "static/media/budgetMe.png": "/React/static/media/budgetMe.58e57c0ca1977c4079f7.png",
     "static/media/ymcaLogo.png": "/React/static/media/ymcaLogo.09efe852c6ed64c28062.png",
     "static/media/wormhole.jpg": "/React/static/media/wormhole.4a3f4b7f91c7381d734c.jpg",
@@ -11,11 +11,11 @@
     "static/media/ecofix_solutions.png": "/React/static/media/ecofix_solutions.450afb8518b53ca122a0.png",
     "static/media/toronto-logo.png": "/React/static/media/toronto-logo.a4efce0cf5204837dc3c.png",
     "index.html": "/React/index.html",
-    "main.b046bba9.css.map": "/React/static/css/main.b046bba9.css.map",
-    "main.a64243c3.js.map": "/React/static/js/main.a64243c3.js.map"
+    "main.ca0dafb6.css.map": "/React/static/css/main.ca0dafb6.css.map",
+    "main.3049bce8.js.map": "/React/static/js/main.3049bce8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b046bba9.css",
-    "static/js/main.a64243c3.js"
+    "static/css/main.ca0dafb6.css",
+    "static/js/main.3049bce8.js"
   ]
 }
