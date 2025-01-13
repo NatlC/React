@@ -1,9 +1,6 @@
-// src/pages/Home.js
 import React, { useEffect } from 'react';
-// import summaryImage from '../images/summary.png';
-// import technicalSkillsImage from '../images/technical-skills.png';
 import bannerImage from '../images/wormhole.jpg'; // Import your banner image
-import './Home.css'
+import './Home.css';
 import educationImage from '../images/education logo.png';
 import experienceFGFBrandsImage from '../images/fgf.jpg';
 import experienceCityTorontoImage from '../images/toronto-logo.png';
@@ -30,35 +27,70 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    const banner = document.querySelector('.banner-container');
+    const bannerImage = document.querySelector('.banner-image');
     const cursor = document.createElement('div');
     cursor.classList.add('custom-cursor');
     document.body.appendChild(cursor);
+
+    // Add SVG filter
+    const svgNamespace = "http://www.w3.org/2000/svg";
+    const svgElement = document.createElementNS(svgNamespace, "svg");
+    svgElement.setAttribute("width", "0");
+    svgElement.setAttribute("height", "0");
+
+    const filterElement = document.createElementNS(svgNamespace, "filter");
+    filterElement.setAttribute("id", "distortion-filter");
+
+    const turbulence = document.createElementNS(svgNamespace, "feTurbulence");
+    turbulence.setAttribute("type", "turbulence");
+    turbulence.setAttribute("baseFrequency", "0.02");
+    turbulence.setAttribute("numOctaves", "2");
+    turbulence.setAttribute("result", "turbulence");
+
+    const displacement = document.createElementNS(svgNamespace, "feDisplacementMap");
+    displacement.setAttribute("in", "SourceGraphic");
+    displacement.setAttribute("in2", "turbulence");
+    displacement.setAttribute("scale", "20");
+
+    filterElement.appendChild(turbulence);
+    filterElement.appendChild(displacement);
+    svgElement.appendChild(filterElement);
+    document.body.appendChild(svgElement);
 
     const moveCursor = (e) => {
       const { clientX: x, clientY: y } = e;
       cursor.style.left = `${x}px`;
       cursor.style.top = `${y}px`;
+
+      if (bannerImage) {
+        bannerImage.style.filter = `url(#distortion-filter)`;
+        turbulence.setAttribute("baseFrequency", `${x / window.innerWidth * 0.05} ${y / window.innerHeight * 0.05}`);
+      }
     };
 
-    banner.addEventListener('mousemove', moveCursor);
+    if (bannerImage) {
+      bannerImage.addEventListener('mousemove', moveCursor);
+    }
 
     return () => {
-      banner.removeEventListener('mousemove', moveCursor);
+      if (bannerImage) {
+        bannerImage.removeEventListener('mousemove', moveCursor);
+      }
       document.body.removeChild(cursor);
+      document.body.removeChild(svgElement);
     };
   }, []);
 
   return (
     <div>
-        <section className="banner-container">
-          <img src={bannerImage} alt="Banner" className="banner-image" />
-          <div className="banner-text">
-            <h1 className="banner-name">Nathan Chan</h1>
-            <p className="banner-description">Aspiring Computer Scientist & Web Developer</p>
-          </div>
-        </section>
-
+      <section className="banner-container">
+        <img src={bannerImage} alt="Banner" className="banner-image" />
+        <div className="banner-text">
+          <h1 className="banner-name">Nathan Chan</h1>
+          <p className="banner-description">Aspiring Computer Scientist & Web Developer</p>
+        </div>
+      </section>
+      
       <section className="section-container">
         <img src={educationImage} alt="Education" className="section-image" />
         <div className="section-text">
