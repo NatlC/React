@@ -108,8 +108,8 @@ body {
 /* Section Styling */
 .section-container {
   display: flex;
-  align-items: flex-start; /* Align items to flex-start for vertical alignment */
-  justify-content: space-between;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center-align items */
   padding: 20px;
   margin: 20px;
   background: white;
@@ -127,15 +127,16 @@ body {
 }
 
 .section-image {
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   border-radius: 8px;
-  margin-right: 20px;
+  margin-bottom: 20px; /* Add margin below image for spacing */
 }
 
 .section-text {
   flex-grow: 1;
-  max-width: calc(100% - 220px); /* Adjust based on image size and desired space */
-  text-align: left; /* Align text to the left */
+  max-width: 100%;
+  text-align: center; /* Center-align text */
   margin-right: 50px;
 }
 
@@ -148,20 +149,21 @@ body {
 .section-text h3 {
   color: #1E3A8A; /* Primary Blue */
   font-weight: bold;
-  text-align: left; /* Align titles to the left */
+  text-align: center; /* Center-align titles */
   margin-bottom: 10px; /* Add space below titles */
 }
 
 /* Specific Styles for Projects Section */
 .projects-section {
   display: flex;
+  flex-direction: column; /* Stack projects vertically */
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .project-image-2 {
-  width: 40%; /* Set width to 40% to make the images smaller */
+  width: 45%; /* Set width for better responsiveness */
   height: auto; /* Ensure the height adjusts proportionally */
   border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
@@ -174,7 +176,7 @@ body {
 
 /* Project Image 1 Styling */
 .project-image-1 {
-  width: 70%; /* Set the width to make the image larger */
+  width: 60%; /* Set the width for better responsiveness */
   height: auto; /* Ensure the height adjusts proportionally */
   border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
@@ -186,39 +188,22 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .banner-name {
-    font-size: 2.5em; /* Adjust font size for smaller screens */
-  }
-
-  .banner-description {
-    font-size: 1.5em; /* Adjust font size for smaller screens */
-  }
-
+@media (min-width: 769px) {
   .section-container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Align sections horizontally for larger screens */
   }
 
-  .projects-section {
-    flex-direction: column;
-    align-items: center;
+  .section-image {
+    margin-right: 20px; /* Add margin to the right for spacing */
+    margin-bottom: 0; /* Remove bottom margin */
   }
 
-  .projects-section .project-image-2,
-  .projects-section .project-image-1 {
-    width: 90%;
-    margin: 10px 0;
+  .section-text {
+    text-align: left; /* Align text to the left */
   }
 
-  .projects-section .project-link {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .projects-section .project-image-2,
-  .projects-section .project-image-1 {
-    width: 90%;
-    max-height: none;
+  .section-text h2,
+  .section-text h3 {
+    text-align: left; /* Align titles to the left */
   }
 }

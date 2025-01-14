@@ -200,7 +200,6 @@ const Home = () => {
         </div>
         <div className="section-text">
           <br></br>
-          <br></br>
           <h3>Arcade Game Application, 2021</h3>
           <p>• Developed an interactive arcade-style game with storyboard, mockup, and prototype.</p>
           <p>• Lead bi-weekly team calls with agile project management to ensure development and testing complete on time with good quality and performance.</p>
