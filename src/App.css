@@ -10,7 +10,7 @@
 /* Font Family */
 body {
   font-family: Arial, sans-serif;
-  font-size: 14px; /* npm run deploy font is not the same as local */
+  font-size: 12px; /* npm run deploy font is not the same as local */
   background: #E0F2FE; /* Lighter Blue */
   color: #111827; /* Neutral Blue */
 }
