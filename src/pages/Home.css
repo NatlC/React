@@ -211,6 +211,6 @@ body {
   }
 
   .project-text {
-    margin-right: none;
+    margin-right: 0px;
   }
 }
