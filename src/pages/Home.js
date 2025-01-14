@@ -191,7 +191,6 @@ const Home = () => {
       <section className="section-container">
         <div className="section-text">
           <h2>Academic Projects</h2>
-          
           <h3>Shopping Application, 2024</h3>
           <p>• Developed a shopping application using object-oriented Java with well-documented, efficient, scalable, reliable, and reusable functions and libraries.</p>
           <p>• Leveraged and followed software testing methodologies to ensure the new application runs efficiently and bug-free.</p>

@@ -1,61 +1,84 @@
 /* About.css */
 
 .about-container {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards; /* Animation properties */
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 200px; /* Increased size */
+  margin-right: 20px;
+  border-radius: 50%; /* Added border radius for circular image */
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 10px; /* Add margin between paragraphs */
+}
+
+/* Cover Image */
+.cover-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Scroll animation */
+.scroll-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn 1.2s ease forwards; /* Animation properties */
   }
-  
-  .profile-image {
-    width: 200px; /* Increased size */
-    margin-right: 20px;
-    border-radius: 0; /* Remove border radius */
-  }
-  
-  .about-text {
-    max-width: 600px;
-  }
-  
-  .about-text p {
-    line-height: 1.6;
-  }
-  
-  /* Scroll animation */
-  .scroll-in {
+  to {
     opacity: 1;
-    transform: translateY(0);
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    align-items: flex-start;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .profile-image {
-      margin-right: 0;
-      margin-bottom: 20px;
-      width: 150px; /* Adjust size for smaller screens */
-    }
-  
-    .about-text {
-      max-width: 100%;
-    }
+
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 150px; /* Adjust size for smaller screens */
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .cover-image {
+    width: 90%;
+  }
+}
