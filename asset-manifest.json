@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.b5554be5.css",
+    "main.css": "/React/static/css/main.23805002.css",
     "main.js": "/React/static/js/main.f404c062.js",
     "static/media/glacier2.jpg": "/React/static/media/glacier2.294ac2924d5e8df28d7f.jpg",
     "static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.jpg": "/React/static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.95f5d399d879e41c2c5c.jpg",
@@ -13,11 +13,11 @@
     "static/media/ecofix_solutions.png": "/React/static/media/ecofix_solutions.450afb8518b53ca122a0.png",
     "static/media/toronto-logo.png": "/React/static/media/toronto-logo.a4efce0cf5204837dc3c.png",
     "index.html": "/React/index.html",
-    "main.b5554be5.css.map": "/React/static/css/main.b5554be5.css.map",
+    "main.23805002.css.map": "/React/static/css/main.23805002.css.map",
     "main.f404c062.js.map": "/React/static/js/main.f404c062.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5554be5.css",
+    "static/css/main.23805002.css",
     "static/js/main.f404c062.js"
   ]
 }
