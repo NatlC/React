@@ -136,6 +136,7 @@ body {
   flex-grow: 1;
   max-width: calc(100% - 220px); /* Adjust based on image size and desired space */
   text-align: left; /* Align text to the left */
+  margin-right: 50px;
 }
 
 .section-text p {
