@@ -108,7 +108,7 @@ body {
 /* Section Styling */
 .section-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align items to flex-start for vertical alignment */
   justify-content: space-between;
   padding: 20px;
   margin: 20px;
@@ -159,23 +159,28 @@ body {
   flex-wrap: wrap;
 }
 
-.projects-section .section-image {
-  width: 45%;
-}
-
-.projects-section .project-link {
-  display: block;
-}
-
-.projects-section .project-image-2 {
-  width: 100%;
+.project-image-2 {
+  width: 40%; /* Set width to 40% to make the images smaller */
   height: auto; /* Ensure the height adjusts proportionally */
   border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
-.projects-section .project-image-2:hover {
-  transform: scale(1.05); /* Slightly enlarge image on hover */
+.project-image-2:hover {
+  transform: scale(1.01); /* Slightly enlarge image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+/* Project Image 1 Styling */
+.project-image-1 {
+  width: 70%; /* Set the width to make the image larger */
+  height: auto; /* Ensure the height adjusts proportionally */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.project-image-1:hover {
+  transform: scale(1.01); /* Slightly enlarge image on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
 }
 
@@ -199,7 +204,8 @@ body {
     align-items: center;
   }
 
-  .projects-section .section-image {
+  .projects-section .project-image-2,
+  .projects-section .project-image-1 {
     width: 90%;
     margin: 10px 0;
   }
@@ -209,7 +215,8 @@ body {
     margin-bottom: 20px;
   }
 
-  .projects-section .project-image-2 {
+  .projects-section .project-image-2,
+  .projects-section .project-image-1 {
     width: 90%;
     max-height: none;
   }

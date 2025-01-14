@@ -190,30 +190,26 @@ const Home = () => {
 
       <section className="section-container">
         <div className="section-text">
-            <h2>Academic Projects</h2>
-            <h3>Shopping Application, 2024</h3>
-            <p>• Developed a shopping application using object-oriented Java with well-documented, efficient, scalable, reliable, and reusable functions and libraries.</p>
-            <p>• Leveraged and followed software testing methodologies to ensure the new application runs efficiently and bug-free.</p>
+          <h2>Academic Projects</h2>
+          <h3>Arcade Game Application, 2021</h3>
+          <p>• Developed an interactive arcade-style game with storyboard, mockup, and prototype.</p>
+          <p>• Lead bi-weekly team calls with agile project management to ensure development and testing complete on time with good quality and performance.</p>
+          <a href="https://github.com/NatlC/Python-Galaga-Game-Dev" target="_blank" rel="noopener noreferrer" className="project-link">
+            <img src={projectsImage2} alt="Academic Projects" className="project-image-2" />
+          </a>
         </div>
-
-        <div className="project-image">
-            <a href="https://github.com/NatlC/Client-Reward-Engagement-Web-Portal" target="_blank" rel="noopener noreferrer" className="project-link">
-                <img src={projectsImage} alt="Academic Projects" className="section-image project-image-2" />
-            </a>
-        </div>
-
         <div className="section-text">
-            <h3>Arcade Game Application, 2021</h3>
-            <p>• Developed an interactive arcade-style game with storyboard, mockup, and prototype.</p>
-            <p>• Lead bi-weekly team calls with agile project management to ensure development and testing complete on time with good quality and performance.</p>
-        </div>
-
-        <div className="project-image">
-            <a href="https://github.com/NatlC/Python-Galaga-Game-Dev" target="_blank" rel="noopener noreferrer" className="project-link">
-                <img src={projectsImage2} alt="Academic Projects" className="section-image project-image-2" />
-            </a>
+          <br></br>
+          <br></br>
+          <h3>Shopping Application, 2024</h3>
+          <p>• Developed a shopping application using object-oriented Java with well-documented, efficient, scalable, reliable, and reusable functions and libraries.</p>
+          <p>• Leveraged and followed software testing methodologies to ensure the new application runs efficiently and bug-free.</p>
+          <a href="https://github.com/NatlC/Client-Reward-Engagement-Web-Portal" target="_blank" rel="noopener noreferrer" className="project-link">
+            <img src={projectsImage} alt="Academic Projects" className="project-image-1" />
+          </a>
         </div>
     </section>
+    
     </div>
   );
 };
