@@ -139,10 +139,6 @@ body {
   text-align: center; /* Center-align text */
 }
 
-.project-text {
-  margin-right: 50px;
-}
-
 .section-text p {
   line-height: 1.6;
 }
@@ -211,6 +207,6 @@ body {
   }
 
   .project-text {
-    margin-right: 0px;
+    margin-right: 50px;
   }
 }
