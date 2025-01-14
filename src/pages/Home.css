@@ -209,4 +209,8 @@ body {
   .section-text h3 {
     text-align: left; /* Align titles to the left */
   }
+
+  .project-text {
+    margin-right: none;
+  }
 }
