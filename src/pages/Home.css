@@ -137,6 +137,9 @@ body {
   flex-grow: 1;
   max-width: 100%;
   text-align: center; /* Center-align text */
+}
+
+.project-text {
   margin-right: 50px;
 }
 

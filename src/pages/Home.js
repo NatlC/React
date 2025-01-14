@@ -189,7 +189,7 @@ const Home = () => {
       </section>
 
       <section className="section-container">
-        <div className="section-text">
+        <div className="section-text project-text">
           <h2>Academic Projects</h2>
           <h3>Shopping Application, 2024</h3>
           <p>• Developed a shopping application using object-oriented Java with well-documented, efficient, scalable, reliable, and reusable functions and libraries.</p>
