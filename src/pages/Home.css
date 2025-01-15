@@ -27,6 +27,7 @@ body {
   height: 105%; /* Adjust the height to ensure it covers more area */
   object-fit: cover;
   transform-origin: center; /* Ensure the image is centered */
+  transform: translateX(0); /* Default position */
 }
 
 .banner-text {
@@ -56,7 +57,6 @@ body {
   border-radius: 50%;
   background: radial-gradient(circle, white 0%, blue 100%); /* Gradient from white to blue */
   pointer-events: none;
-  transform: translate(-50%, -50%);
   transition: transform 0.1s ease, background-color 0.3s ease;
   animation: cursorAnimation 1s infinite;
 }
@@ -217,7 +217,11 @@ body {
 }
 
 /* Adjustments for smaller screens (iPhone sizes) */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .banner-image {
+    transform: translateX(-20px); /* Translate the image more to the left on smaller screens */
+  }
+
   .project-image-2,
   .project-image-1 {
     width: 90%; /* Increase image size for smaller screens */
