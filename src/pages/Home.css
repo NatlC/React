@@ -216,3 +216,10 @@ body {
   }
 }
 
+/* Adjustments for smaller screens (iPhone sizes) */
+@media (max-width: 768px) {
+  .project-image-2,
+  .project-image-1 {
+    width: 90%; /* Increase image size for smaller screens */
+  }
+}
