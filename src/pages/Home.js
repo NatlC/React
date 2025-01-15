@@ -13,6 +13,10 @@ import volunteerImage from '../images/ymcaLogo.png';
 import projectsImage2 from '../images/Galaga.png';
 import './Home.css';
 
+const isMobileDevice = () => {
+  return /Mobi|Android/i.test(navigator.userAgent);
+};
+
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [bannerImage1, bannerImage2, bannerImage3];
@@ -32,6 +36,10 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
+    if (isMobileDevice()) {
+      return; // Skip the custom cursor and distortion effect on mobile devices
+    }
+
     const bannerImage = document.querySelector('.banner-image');
     const cursor = document.createElement('div');
     cursor.classList.add('custom-cursor');
