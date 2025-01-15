@@ -67,20 +67,27 @@ const Home = () => {
       cursor.style.left = `${x}px`;
       cursor.style.top = `${y}px`;
 
-      if (bannerImage) {
-        bannerImage.style.filter = `url(#distortion-filter)`;
-        turbulence.setAttribute("baseFrequency", `${x / window.innerWidth * 0.05} ${y / window.innerHeight * 0.05}`);
+      const banner = document.querySelector('.banner-container');
+      const { top, bottom, left, right } = banner.getBoundingClientRect();
+
+      if (x >= left && x <= right && y >= top && y <= bottom) {
+        cursor.style.display = 'block';
+        if (bannerImage) {
+          bannerImage.style.filter = `url(#distortion-filter)`;
+          turbulence.setAttribute("baseFrequency", `${x / window.innerWidth * 0.05} ${y / window.innerHeight * 0.05}`);
+        }
+      } else {
+        cursor.style.display = 'none';
+        if (bannerImage) {
+          bannerImage.style.filter = 'none';
+        }
       }
     };
 
-    if (bannerImage) {
-      bannerImage.addEventListener('mousemove', moveCursor);
-    }
+    document.addEventListener('mousemove', moveCursor);
 
     return () => {
-      if (bannerImage) {
-        bannerImage.removeEventListener('mousemove', moveCursor);
-      }
+      document.removeEventListener('mousemove', moveCursor);
       document.body.removeChild(cursor);
       document.body.removeChild(svgElement);
     };
