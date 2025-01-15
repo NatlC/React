@@ -11,6 +11,7 @@ import experienceQuadientCanadaImage from '../images/quadientLogo.png';
 import projectsImage from '../images/ecofix_solutions.png';
 import volunteerImage from '../images/ymcaLogo.png';
 import projectsImage2 from '../images/Galaga.png';
+import hoverSound from '../sounds/clickTrim.mp3';
 import './Home.css';
 
 const isMobileDevice = () => {
@@ -20,7 +21,7 @@ const isMobileDevice = () => {
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [bannerImage1, bannerImage2, bannerImage3];
-
+  
   useEffect(() => {
     const setBannerHeight = () => {
       const banner = document.querySelector('.banner-container');
@@ -36,69 +37,66 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    if (isMobileDevice()) {
-      return; // Skip the custom cursor and distortion effect on mobile devices
+    if (!isMobileDevice()) {
+      const bannerImage = document.querySelector('.banner-image');
+      const cursor = document.createElement('div');
+      cursor.classList.add('custom-cursor');
+      document.body.appendChild(cursor);
+
+      const svgNamespace = "http://www.w3.org/2000/svg";
+      const svgElement = document.createElementNS(svgNamespace, "svg");
+      svgElement.setAttribute("width", "0");
+      svgElement.setAttribute("height", "0");
+
+      const filterElement = document.createElementNS(svgNamespace, "filter");
+      filterElement.setAttribute("id", "distortion-filter");
+
+      const turbulence = document.createElementNS(svgNamespace, "feTurbulence");
+      turbulence.setAttribute("type", "turbulence");
+      turbulence.setAttribute("baseFrequency", "0.02");
+      turbulence.setAttribute("numOctaves", "2");
+      turbulence.setAttribute("result", "turbulence");
+
+      const displacement = document.createElementNS(svgNamespace, "feDisplacementMap");
+      displacement.setAttribute("in", "SourceGraphic");
+      displacement.setAttribute("in2", "turbulence");
+      displacement.setAttribute("scale", "20");
+
+      filterElement.appendChild(turbulence);
+      filterElement.appendChild(displacement);
+      svgElement.appendChild(filterElement);
+      document.body.appendChild(svgElement);
+
+      const moveCursor = (e) => {
+        const { clientX: x, clientY: y } = e;
+        cursor.style.left = `${x}px`;
+        cursor.style.top = `${y}px`;
+
+        const banner = document.querySelector('.banner-container');
+        const { top, bottom, left, right } = banner.getBoundingClientRect();
+
+        if (x >= left && x <= right && y >= top && y <= bottom) {
+          cursor.style.display = 'block';
+          if (bannerImage) {
+            bannerImage.style.filter = `url(#distortion-filter)`;
+            turbulence.setAttribute("baseFrequency", `${x / window.innerWidth * 0.05} ${y / window.innerHeight * 0.05}`);
+          }
+        } else {
+          cursor.style.display = 'none';
+          if (bannerImage) {
+            bannerImage.style.filter = 'none';
+          }
+        }
+      };
+
+      document.addEventListener('mousemove', moveCursor);
+
+      return () => {
+        document.removeEventListener('mousemove', moveCursor);
+        document.body.removeChild(cursor);
+        document.body.removeChild(svgElement);
+      };
     }
-
-    const bannerImage = document.querySelector('.banner-image');
-    const cursor = document.createElement('div');
-    cursor.classList.add('custom-cursor');
-    document.body.appendChild(cursor);
-
-    // Add SVG filter
-    const svgNamespace = "http://www.w3.org/2000/svg";
-    const svgElement = document.createElementNS(svgNamespace, "svg");
-    svgElement.setAttribute("width", "0");
-    svgElement.setAttribute("height", "0");
-
-    const filterElement = document.createElementNS(svgNamespace, "filter");
-    filterElement.setAttribute("id", "distortion-filter");
-
-    const turbulence = document.createElementNS(svgNamespace, "feTurbulence");
-    turbulence.setAttribute("type", "turbulence");
-    turbulence.setAttribute("baseFrequency", "0.02");
-    turbulence.setAttribute("numOctaves", "2");
-    turbulence.setAttribute("result", "turbulence");
-
-    const displacement = document.createElementNS(svgNamespace, "feDisplacementMap");
-    displacement.setAttribute("in", "SourceGraphic");
-    displacement.setAttribute("in2", "turbulence");
-    displacement.setAttribute("scale", "20");
-
-    filterElement.appendChild(turbulence);
-    filterElement.appendChild(displacement);
-    svgElement.appendChild(filterElement);
-    document.body.appendChild(svgElement);
-
-    const moveCursor = (e) => {
-      const { clientX: x, clientY: y } = e;
-      cursor.style.left = `${x}px`;
-      cursor.style.top = `${y}px`;
-
-      const banner = document.querySelector('.banner-container');
-      const { top, bottom, left, right } = banner.getBoundingClientRect();
-
-      if (x >= left && x <= right && y >= top && y <= bottom) {
-        cursor.style.display = 'block';
-        if (bannerImage) {
-          bannerImage.style.filter = `url(#distortion-filter)`;
-          turbulence.setAttribute("baseFrequency", `${x / window.innerWidth * 0.05} ${y / window.innerHeight * 0.05}`);
-        }
-      } else {
-        cursor.style.display = 'none';
-        if (bannerImage) {
-          bannerImage.style.filter = 'none';
-        }
-      }
-    };
-
-    document.addEventListener('mousemove', moveCursor);
-
-    return () => {
-      document.removeEventListener('mousemove', moveCursor);
-      document.body.removeChild(cursor);
-      document.body.removeChild(svgElement);
-    };
   }, []);
 
   useEffect(() => {
@@ -108,6 +106,35 @@ const Home = () => {
 
     return () => clearInterval(interval);
   }, [images.length]);
+
+  useEffect(() => {
+    const enableAudioPlayback = () => {
+      const handleMouseEnter = () => {
+        const audio = new Audio(hoverSound);
+        audio.play();
+      };
+
+      const sectionContainers = document.querySelectorAll('.section-container');
+      sectionContainers.forEach((section) => {
+        section.addEventListener('mouseenter', handleMouseEnter);
+      });
+
+      document.removeEventListener('click', enableAudioPlayback); // Remove event listener after first click
+
+      return () => {
+        sectionContainers.forEach((section) => {
+          section.removeEventListener('mouseenter', handleMouseEnter);
+        });
+      };
+    };
+
+    // Add event listener to enable audio playback on first user interaction (click)
+    document.addEventListener('click', enableAudioPlayback);
+
+    return () => {
+      document.removeEventListener('click', enableAudioPlayback); // Ensure cleanup of event listener
+    };
+  }, []);
 
   return (
     <div>
