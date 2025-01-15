@@ -39,7 +39,6 @@
   width: 100%;
   max-width: 600px;
   border-radius: 8px;
-  margin-top: 20px;
 }
 
 /* Scroll animation */
@@ -60,12 +59,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
-    align-items: flex-start;
+    align-items: center; /* Center align items */
   }
 
   .about-content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Center align items */
   }
 
   .profile-image {
@@ -76,9 +75,11 @@
 
   .about-text {
     max-width: 100%;
+    text-align: center; /* Center-align text */
   }
 
   .cover-image {
     width: 90%;
+    max-width: 600px;
   }
 }
