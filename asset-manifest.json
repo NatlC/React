@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.7c1a8552.css",
-    "main.js": "/React/static/js/main.243c8822.js",
+    "main.css": "/React/static/css/main.1a07f99f.css",
+    "main.js": "/React/static/js/main.5647e94c.js",
     "static/media/Nathan_Album_Cover.jpg": "/React/static/media/Nathan_Album_Cover.726f99dfe01d8d63b10c.jpg",
     "static/media/glacier2.jpg": "/React/static/media/glacier2.294ac2924d5e8df28d7f.jpg",
     "static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.jpg": "/React/static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.95f5d399d879e41c2c5c.jpg",
@@ -15,11 +15,11 @@
     "static/media/ecofix_solutions.png": "/React/static/media/ecofix_solutions.450afb8518b53ca122a0.png",
     "static/media/toronto-logo.png": "/React/static/media/toronto-logo.a4efce0cf5204837dc3c.png",
     "index.html": "/React/index.html",
-    "main.7c1a8552.css.map": "/React/static/css/main.7c1a8552.css.map",
-    "main.243c8822.js.map": "/React/static/js/main.243c8822.js.map"
+    "main.1a07f99f.css.map": "/React/static/css/main.1a07f99f.css.map",
+    "main.5647e94c.js.map": "/React/static/js/main.5647e94c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c1a8552.css",
-    "static/js/main.243c8822.js"
+    "static/css/main.1a07f99f.css",
+    "static/js/main.5647e94c.js"
   ]
 }
