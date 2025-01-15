@@ -175,7 +175,7 @@ body {
 
 /* Project Image 1 Styling */
 .project-image-1 {
-  width: 60%; /* Set the width for better responsiveness */
+  width: 70%; /* Set the width for better responsiveness */
   height: auto; /* Ensure the height adjusts proportionally */
   border-radius: 8px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
@@ -208,5 +208,11 @@ body {
 
   .project-text {
     margin-right: 50px;
+    margin-top: -15px;
+  }
+
+  .test {
+    margin-top: 30px;
   }
 }
+
