@@ -1,5 +1,4 @@
-/* Home.css */
-
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   background: #E0F2FE; /* Lighter Blue */
@@ -27,6 +26,21 @@ body {
   height: 105%; /* Adjust the height to ensure it covers more area */
   object-fit: cover;
   transform-origin: center; /* Ensure the image is centered */
+}
+
+/* Adjustments for smaller screens (iPhone sizes) */
+@media (max-width: 768px) {
+  .banner-image {
+    width: 120%; /* Expand the image width on mobile devices */
+    height: 120%; /* Expand the image height on mobile devices */
+    left: -10%; /* Adjust the position to center the image */
+    top: -10%; /* Adjust the position to center the image */
+  }
+
+  .project-image-2,
+  .project-image-1 {
+    width: 90%; /* Increase image size for smaller screens */
+  }
 }
 
 .banner-text {
@@ -164,12 +178,13 @@ body {
   width: 45%; /* Set width for better responsiveness */
   height: auto; /* Ensure the height adjusts proportionally */
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(60, 120, 240, 0.6); /* Default blue glow */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .project-image-2:hover {
   transform: scale(1.01); /* Slightly enlarge image on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+  box-shadow: 0 0 20px rgba(60, 120, 240, 0.8), 0 0 30px rgba(60, 120, 240, 0.6); /* Intensified blue glow */
 }
 
 /* Project Image 1 Styling */
@@ -177,12 +192,18 @@ body {
   width: 70%; /* Set the width for better responsiveness */
   height: auto; /* Ensure the height adjusts proportionally */
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(60, 120, 240, 0.6); /* Default blue glow */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .project-image-1:hover {
   transform: scale(1.01); /* Slightly enlarge image on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+  box-shadow: 0 0 20px rgba(60, 120, 240, 0.8), 0 0 30px rgba(60, 120, 240, 0.6); /* Intensified blue glow */
+}
+
+.project-image-2,
+  .project-image-1 {
+    margin-top: 10px;
 }
 
 /* Responsive Design */
