@@ -8,7 +8,8 @@ const Navigation = () => {
       <Link to="/">Home</Link>
       <Link to="/about">About Me</Link>
       <a href={pdfResume} target="_blank" rel="noopener noreferrer">Resume</a> {/* Link to the PDF resume */}
-      <a href="https://www.linkedin.com/in/nathanl-chan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/NatlC" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
   );
 };
