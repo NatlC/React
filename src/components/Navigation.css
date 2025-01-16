@@ -1,0 +1,67 @@
+/* Navigation.css */
+
+/* General Styles for Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Toggle Button for Dropdown */
+  .navbar-toggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Navbar Menu */
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .navbar-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #1e90ff;
+  }
+  
+  /* Dropdown Menu for Phones */
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-menu.open {
+      display: flex;
+    }
+  
+    .navbar-menu a {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  
