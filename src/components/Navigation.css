@@ -1,65 +1,63 @@
-/* Navigation.css */
-
 /* General Styles for Navbar */
 .navbar {
-    background-color: #3B82F6;
-    padding: 6px;
-    position: relative;
-  }
-  
-  .navbar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Toggle Button for Dropdown */
+  background-color: #3B82F6;
+  padding: 6px;
+  position: relative;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+}
+
+/* Toggle Button for Dropdown */
+.navbar-toggle {
+  display: none;
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 5px; /* Adjust this value to match the section container alignment */
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #1e90ff;
+}
+
+/* Dropdown Menu for Phones */
+@media (max-width: 768px) {
   .navbar-toggle {
-    display: none;
-    background-color: #3B82F6;
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+    display: block;
   }
-  
-  /* Navbar Menu */
+
   .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu.open {
     display: flex;
-    flex-direction: row;
   }
-  
+
   .navbar-menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 15px;
-    transition: color 0.3s ease;
+    margin: 10px 0;
+    text-align: center;
   }
-  
-  .navbar-menu a:hover {
-    color: #1e90ff;
-  }
-  
-  /* Dropdown Menu for Phones */
-  @media (max-width: 768px) {
-    .navbar-toggle {
-      display: block;
-    }
-  
-    .navbar-menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .navbar-menu.open {
-      display: flex;
-    }
-  
-    .navbar-menu a {
-      margin: 10px 0;
-      text-align: center;
-    }
-  }
-  
+}
