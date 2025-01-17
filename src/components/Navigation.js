@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import pdfResume from '../assets/2025 Nathan chan resume.pdf'; // Adjust the path to your PDF file
+import pdfResume from '../assets/2025 Nathan resume.pdf'; // Adjust the path to your PDF file
 import './Navigation.css'; // Ensure you have a corresponding CSS file
 
 const Navigation = () => {
