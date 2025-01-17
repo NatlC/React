@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.7dfcebcf.css",
+    "main.css": "/React/static/css/main.be47edbe.css",
     "main.js": "/React/static/js/main.af662e63.js",
     "static/media/Nathan_Album_Cover.jpg": "/React/static/media/Nathan_Album_Cover.726f99dfe01d8d63b10c.jpg",
     "static/media/glacier2.jpg": "/React/static/media/glacier2.294ac2924d5e8df28d7f.jpg",
@@ -16,11 +16,11 @@
     "static/media/toronto-logo.png": "/React/static/media/toronto-logo.a4efce0cf5204837dc3c.png",
     "static/media/clickTrim.mp3": "/React/static/media/clickTrim.69f31d971d95c5133cfc.mp3",
     "index.html": "/React/index.html",
-    "main.7dfcebcf.css.map": "/React/static/css/main.7dfcebcf.css.map",
+    "main.be47edbe.css.map": "/React/static/css/main.be47edbe.css.map",
     "main.af662e63.js.map": "/React/static/js/main.af662e63.js.map"
   },
   "entrypoints": [
-    "static/css/main.7dfcebcf.css",
+    "static/css/main.be47edbe.css",
     "static/js/main.af662e63.js"
   ]
 }
