@@ -2,8 +2,8 @@
 
 /* General Styles for Navbar */
 .navbar {
-    background-color: #333;
-    padding: 10px;
+    background-color: #3B82F6;
+    padding: 7px;
     position: relative;
   }
   
@@ -16,7 +16,7 @@
   /* Toggle Button for Dropdown */
   .navbar-toggle {
     display: none;
-    background-color: #333;
+    background-color: #3B82F6;
     color: white;
     border: none;
     font-size: 24px;
@@ -27,15 +27,13 @@
   .navbar-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
   
   .navbar-menu a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 16px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     transition: color 0.3s ease;
   }
   

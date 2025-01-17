@@ -13,9 +13,7 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       <div className="navbar-header">
-        <button className="navbar-toggle" onClick={toggleDropdown}>
-          ☰
-        </button>
+        <button className="navbar-toggle" onClick={toggleDropdown}>☰</button>
       </div>
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <Link to="/">Home</Link>
