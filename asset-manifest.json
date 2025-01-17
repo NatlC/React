@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React/static/css/main.6eed59ce.css",
-    "main.js": "/React/static/js/main.af662e63.js",
+    "main.js": "/React/static/js/main.05038014.js",
     "static/media/Nathan_Album_Cover.jpg": "/React/static/media/Nathan_Album_Cover.726f99dfe01d8d63b10c.jpg",
+    "static/media/mosharraf-hossain-4oihEi2cPPA-unsplash.jpg": "/React/static/media/mosharraf-hossain-4oihEi2cPPA-unsplash.1074c6d3efca444002b8.jpg",
     "static/media/glacier2.jpg": "/React/static/media/glacier2.294ac2924d5e8df28d7f.jpg",
-    "static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.jpg": "/React/static/media/rostyslav-savchyn-O22z_2IXdWY-unsplash.95f5d399d879e41c2c5c.jpg",
+    "static/media/miguel-a-amutio-mIwrx5WitFA-unsplash.jpg": "/React/static/media/miguel-a-amutio-mIwrx5WitFA-unsplash.4418eded729a720622d9.jpg",
     "static/media/budgetMe.png": "/React/static/media/budgetMe.58e57c0ca1977c4079f7.png",
     "static/media/2025 Nathan chan resume.pdf": "/React/static/media/2025 Nathan chan resume.8bac4a5c1743ffa2db13.pdf",
     "static/media/ymcaLogo.png": "/React/static/media/ymcaLogo.09efe852c6ed64c28062.png",
-    "static/media/wormhole.jpg": "/React/static/media/wormhole.4a3f4b7f91c7381d734c.jpg",
     "static/media/education logo.png": "/React/static/media/education logo.14506e987316ca98de00.png",
     "static/media/Galaga.png": "/React/static/media/Galaga.4bd805bcb48f66914ba5.png",
     "static/media/fgf.jpg": "/React/static/media/fgf.fe04f7bab010cdad69ce.jpg",
@@ -17,10 +17,10 @@
     "static/media/clickTrim.mp3": "/React/static/media/clickTrim.69f31d971d95c5133cfc.mp3",
     "index.html": "/React/index.html",
     "main.6eed59ce.css.map": "/React/static/css/main.6eed59ce.css.map",
-    "main.af662e63.js.map": "/React/static/js/main.af662e63.js.map"
+    "main.05038014.js.map": "/React/static/js/main.05038014.js.map"
   },
   "entrypoints": [
     "static/css/main.6eed59ce.css",
-    "static/js/main.af662e63.js"
+    "static/js/main.05038014.js"
   ]
 }
