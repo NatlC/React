@@ -1,45 +1,44 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background: #E0F2FE; /* Lighter Blue */
-  color: #111827; /* Neutral Blue */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  background: #E0F2FE;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Banner Section */
 .banner-container {
   position: relative;
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
-  cursor: none; /* Hide the default cursor */
-  background: #000000; /* Black background to cover any white spaces */
+  cursor: none;
+  background: #000000;
 }
 
 .banner-image {
   position: absolute;
-  top: -20px; /* Adjust the top position */
-  left: -20px; /* Adjust the left position */
-  width: 105%; /* Adjust the width to ensure it covers more area */
-  height: 105%; /* Adjust the height to ensure it covers more area */
+  top: -20px;
+  left: -20px;
+  width: 105%;
+  height: 105%;
   object-fit: cover;
-  transform-origin: center; /* Ensure the image is centered */
+  transform-origin: center;
 }
 
 /* Adjustments for smaller screens (iPhone sizes) */
 @media (max-width: 768px) {
   .banner-image {
-    width: 120%; /* Expand the image width on mobile devices */
-    height: 120%; /* Expand the image height on mobile devices */
-    left: -10%; /* Adjust the position to center the image */
-    top: -10%; /* Adjust the position to center the image */
+    width: 120%;
+    height: 120%;
+    left: -10%;
+    top: -10%;
   }
 
   .project-image-2,
   .project-image-1 {
-    width: 90%; /* Increase image size for smaller screens */
+    width: 90%;
   }
 }
 
@@ -53,24 +52,24 @@ body {
 }
 
 .banner-name {
-  font-size: 4em; /* Increased Font Size */
+  font-size: 4em;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .banner-description {
-  font-size: 2em; /* Increased Font Size */
+  font-size: 2em;
   margin-top: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Custom Cursor */
 .custom-cursor {
   position: absolute;
-  width: 20px; /* Smaller size */
-  height: 20px; /* Smaller size */
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: radial-gradient(circle, white 0%, blue 100%); /* Gradient from white to blue */
+  background: radial-gradient(circle, white 0%, blue 100%);
   pointer-events: none;
   transition: transform 0.1s ease, background-color 0.3s ease;
   animation: cursorAnimation 1s infinite;
@@ -79,12 +78,12 @@ body {
 .custom-cursor::before {
   content: '';
   position: absolute;
-  top: -5px; /* Adjusted for smaller outer ring */
-  left: -5px; /* Adjusted for smaller outer ring */
-  width: 30px; /* Smaller size */
-  height: 30px; /* Smaller size */
+  top: -5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  border: 2px solid rgba(60, 120, 240, 0.7); /* Outer ring */
+  border: 2px solid rgba(60, 120, 240, 0.7);
   box-sizing: border-box;
   animation: outerRingAnimation 1s infinite;
 }
@@ -110,21 +109,21 @@ body {
 }
 
 .banner-link {
-  color: #60A5FA; /* Accent Blue */
+  color: #60A5FA;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .banner-link:hover {
-  color: #93C5FD; /* Light Blue */
+  color: #93C5FD;
 }
 
 /* Section Styling */
 .section-container {
   display: flex;
-  flex-direction: column; /* Stack sections vertically */
-  align-items: center; /* Center-align items */
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   margin: 20px;
   background: white;
@@ -136,22 +135,22 @@ body {
 }
 
 .section-container:hover {
-  transform: translate(10px, 10px); /* Move down to the right on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Add a shadow effect on hover */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for the hover effect */
+  transform: translate(10px, 10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .section-image {
   width: 100%;
   max-width: 150px;
   border-radius: 8px;
-  margin-bottom: 20px; /* Add margin below image for spacing */
+  margin-bottom: 20px;
 }
 
 .section-text {
   flex-grow: 1;
   max-width: 100%;
-  text-align: center; /* Center-align text */
+  text-align: center;
 }
 
 .section-text p {
@@ -161,46 +160,45 @@ body {
 /* Title Styling */
 .section-text h2,
 .section-text h3 {
-  color: #1E3A8A; /* Primary Blue */
+  color: #1E3A8A;
   font-weight: bold;
-  text-align: center; /* Center-align titles */
-  margin-bottom: 10px; /* Add space below titles */
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* Specific Styles for Projects Section */
 .projects-section {
   display: flex;
-  flex-direction: column; /* Stack projects vertically */
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .project-image-2 {
-  width: 45%; /* Set width for better responsiveness */
-  height: auto; /* Ensure the height adjusts proportionally */
+  width: 45%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(60, 120, 240, 0.6); /* Default blue glow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+  box-shadow: 0 0 10px rgba(60, 120, 240, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-image-2:hover {
-  transform: scale(1.01); /* Slightly enlarge image on hover */
-  box-shadow: 0 0 20px rgba(60, 120, 240, 0.8), 0 0 30px rgba(60, 120, 240, 0.6); /* Intensified blue glow */
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(60, 120, 240, 0.8), 0 0 30px rgba(60, 120, 240, 0.6);
 }
 
-/* Project Image 1 Styling */
 .project-image-1 {
-  width: 70%; /* Set the width for better responsiveness */
-  height: auto; /* Ensure the height adjusts proportionally */
+  width: 70%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(60, 120, 240, 0.6); /* Default blue glow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+  box-shadow: 0 0 10px rgba(60, 120, 240, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-image-1:hover {
-  transform: scale(1.01); /* Slightly enlarge image on hover */
-  box-shadow: 0 0 20px rgba(60, 120, 240, 0.8), 0 0 30px rgba(60, 120, 240, 0.6); /* Intensified blue glow */
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(60, 120, 240, 0.8), 0 0 30px rgba(60, 120, 240, 0.6);
 }
 
 .project-image-2,
@@ -212,21 +210,21 @@ body {
 /* Responsive Design */
 @media (min-width: 769px) {
   .section-container {
-    flex-direction: row; /* Align sections horizontally for larger screens */
+    flex-direction: row;
   }
 
   .section-image {
-    margin-right: 20px; /* Add margin to the right for spacing */
-    margin-bottom: 0; /* Remove bottom margin */
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 
   .section-text {
-    text-align: left; /* Align text to the left */
+    text-align: left;
   }
 
   .section-text h2,
   .section-text h3 {
-    text-align: left; /* Align titles to the left */
+    text-align: left;
   }
 
   .project-text {
@@ -243,6 +241,6 @@ body {
 @media (max-width: 768px) {
   .project-image-2,
   .project-image-1 {
-    width: 90%; /* Increase image size for smaller screens */
+    width: 90%;
   }
 }

@@ -1,4 +1,3 @@
-// src/pages/About.js
 import React from 'react';
 import './About.css';
 import profileImage from '../images/budgetMe.png';

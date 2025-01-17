@@ -1,5 +1,3 @@
-/* About.css */
-
 .about-container {
   display: flex;
   flex-direction: column;
@@ -10,7 +8,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  animation: fadeIn 1.2s ease forwards; /* Animation properties */
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .about-content {
@@ -20,9 +18,9 @@
 }
 
 .profile-image {
-  width: 200px; /* Increased size */
+  width: 200px; 
   margin-right: 20px;
-  border-radius: 50%; /* Added border radius for circular image */
+  border-radius: 50%; 
 }
 
 .about-text {
@@ -31,7 +29,7 @@
 
 .about-text p {
   line-height: 1.6;
-  margin-bottom: 10px; /* Add margin between paragraphs */
+  margin-bottom: 10px; 
 }
 
 /* Cover Image */
@@ -59,23 +57,23 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
-    align-items: center; /* Center align items */
+    align-items: center;
   }
 
   .about-content {
     flex-direction: column;
-    align-items: center; /* Center align items */
+    align-items: center; 
   }
 
   .profile-image {
     margin-right: 0;
     margin-bottom: 20px;
-    width: 150px; /* Adjust size for smaller screens */
+    width: 150px;
   }
 
   .about-text {
     max-width: 100%;
-    text-align: center; /* Center-align text */
+    text-align: center;
   }
 
   .cover-image {

@@ -7,7 +7,7 @@
 
 .navbar-header {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -19,7 +19,7 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-  margin-left: 5px; /* Adjust this value to match the section container alignment */
+  margin-left: 5px; 
 }
 
 /* Navbar Menu */
