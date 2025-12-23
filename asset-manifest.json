@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/React/static/css/main.3e651364.css",
-    "main.js": "/React/static/js/main.5e0ee1b4.js",
+    "main.js": "/React/static/js/main.909cdd1c.js",
     "static/media/Nathan_Album_Cover.jpg": "/React/static/media/Nathan_Album_Cover.726f99dfe01d8d63b10c.jpg",
     "static/media/mosharraf-hossain-4oihEi2cPPA-unsplash.jpg": "/React/static/media/mosharraf-hossain-4oihEi2cPPA-unsplash.1074c6d3efca444002b8.jpg",
     "static/media/glacier2.jpg": "/React/static/media/glacier2.294ac2924d5e8df28d7f.jpg",
     "static/media/miguel-a-amutio-mIwrx5WitFA-unsplash.jpg": "/React/static/media/miguel-a-amutio-mIwrx5WitFA-unsplash.4418eded729a720622d9.jpg",
+    "static/media/ai-toronto-logo.png": "/React/static/media/ai-toronto-logo.455405e64bf5a8601142.png",
     "static/media/budgetMe.png": "/React/static/media/budgetMe.58e57c0ca1977c4079f7.png",
     "static/media/2025 Nathan resume.pdf": "/React/static/media/2025 Nathan resume.4ab4d589bed5ad1a506d.pdf",
     "static/media/ymcaLogo.png": "/React/static/media/ymcaLogo.09efe852c6ed64c28062.png",
@@ -17,10 +18,10 @@
     "static/media/clickTrim.mp3": "/React/static/media/clickTrim.69f31d971d95c5133cfc.mp3",
     "index.html": "/React/index.html",
     "main.3e651364.css.map": "/React/static/css/main.3e651364.css.map",
-    "main.5e0ee1b4.js.map": "/React/static/js/main.5e0ee1b4.js.map"
+    "main.909cdd1c.js.map": "/React/static/js/main.909cdd1c.js.map"
   },
   "entrypoints": [
     "static/css/main.3e651364.css",
-    "static/js/main.5e0ee1b4.js"
+    "static/js/main.909cdd1c.js"
   ]
 }
