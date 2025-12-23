@@ -5,6 +5,7 @@ import bannerImage3 from '../images/mosharraf-hossain-4oihEi2cPPA-unsplash.jpg';
 import educationImage from '../images/education logo.png';
 import experienceFGFBrandsImage from '../images/fgf.jpg';
 import experienceCityTorontoImage from '../images/toronto-logo.png';
+import newestexperienceCityTorontoImage from '../images/ai-toronto-logo.png'
 import experienceBayviewGlenImage from '../images/bayview_glen_logo.png';
 import experienceIdeologicalSystemsImage from '../images/idea.png';
 import experienceQuadientCanadaImage from '../images/quadientLogo.png';
@@ -151,6 +152,13 @@ const Home = () => {
         <div className="section-text">
           <h2>Education</h2>
           <p>• Bachelor of Science: Computer Science, Sept 2021 – Present, Toronto Metropolitan University (formerly Ryerson), Toronto, ON.</p>
+        </div>
+      </section>
+
+      <section className="section-container">
+        <img src={newestexperienceCityTorontoImage} alt="IT Trainee, COT" className="section-image" />
+        <div className="section-text">
+          <h3>IT Trainee - Request (ITSM) and Incident (ITIM) management, City of Toronto, Toronto, ON, May 2025 – Dec 2025</h3>
         </div>
       </section>
 
