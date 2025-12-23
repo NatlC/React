@@ -159,6 +159,20 @@ const Home = () => {
         <img src={newestexperienceCityTorontoImage} alt="IT Trainee, COT" className="section-image" />
         <div className="section-text">
           <h3>IT Trainee - Request (ITSM) and Incident (ITIM) management, City of Toronto, Toronto, ON, May 2025 – Dec 2025</h3>
+          <h4>Request</h4>
+            <p>• Built and deployed ServiceNow catalog items end-to-end, defining variables, form layouts, workflows, and approval processes.</p>
+            <p>• Developed server-side and client-side logic (Business Rules, UI Actions, UI Policies) to enforce validation, automate approvals, and ensure data accuracy.</p>
+            <p>• Designed user-friendly ServiceNow request forms with a strong focus on UI/UX, improving clarity, reducing friction, and enhancing the end-user experience.</p>
+            <p>• Collaborated with stakeholders across multiple teams to gather requirements, understand objectives, and translate needs into functional ServiceNow solutions.</p>
+            <p>• Authored and maintained Business Requirements Documents (BRDs), including scope, workflows, roles, and detailed form blueprints.</p>
+            <p>• Coordinated testing and feedback cycles across Development, QA, and UAT environments, incorporating stakeholder input to refine and finalize solutions.</p>
+
+          <h4>Incident</h4>
+            <p>• Developed a clear understanding of incident versus request management by documenting similarities, differences, and best practices for ticket handling.</p>
+            <p>• Extracted incident resolution and interaction data from ServiceNow reports to support operational and performance analysis.</p>
+            <p>• Analyzed ticket data in Excel using pivot tables to identify trends, common resolution paths, and service desk interaction patterns.</p>
+            <p>• Leveraged Power Query to build dependent categories and automate data transformation, enabling efficient and repeatable incident analysis.</p>
+            <p>• Applied insights from data analysis to improve how incidents are categorized, reviewed, and interpreted for service improvement.</p>
         </div>
       </section>
 
