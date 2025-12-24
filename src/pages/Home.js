@@ -166,12 +166,12 @@ const Home = () => {
               <p>• Collaborated with stakeholders across multiple teams to translate business needs into functional ServiceNow solutions, improving alignment between requirements and delivered outcomes.</p>
               <p>• Authored and maintained Business Requirements Documents (BRDs), leading stakeholder meetings, reviews, and demos to refine requirements and iteratively improve catalog items.</p>
 
-              <h4>Ticket Data Processing &amp; Cleansing (Offline Pipeline)</h4>
+            <h4>Incident Data Analysis</h4>
+              <p>• Analyzed ServiceNow incident data using Excel (pivot tables, Power Query) to identify recurring issues and trends, supporting the creation of knowledge base articles and problem records for service desk teams.</p>
+              
+            <h4>Ticket Data Processing &amp; Cleansing (Offline Pipeline)</h4>
               <p>• Built an offline Python-based data processing pipeline to preprocess high-volume ServiceNow incident data, replacing manual ticket review with automated preprocessing and improving consistency in incident categorization.</p>
               <p>• Designed the pipeline to operate in restricted environments with no outbound connectivity, enabling privacy-conscious data handling and safe preparation of datasets for LLM-assisted analysis.</p>
-
-              <h4>Incident Data Analysis</h4>
-              <p>• Analyzed ServiceNow incident data using Excel (pivot tables, Power Query) to identify recurring issues and trends, supporting the creation of knowledge base articles and problem records for service desk teams.</p>
         </div>
       </section>
 
