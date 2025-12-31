@@ -159,6 +159,7 @@ const Home = () => {
         <div className="section-text">
           <h3>IT Trainee - Request and Incident management (ITSM), City of Toronto, Toronto, ON, May 2025 – Dec 2025</h3>
             <h4>ServiceNow Catalog &amp; Development</h4>
+              <p></p>
               <p>• Built and delivered ServiceNow catalog items end-to-end, standardizing request intake and reducing manual handling through structured variables, workflows, and approval processes.</p>
               <p>• Developed ServiceNow request solutions in DEV, documenting work through Agile stories and packaging changes into update sets to support controlled promotion through QA and UAT prior to production deployment.</p>
               <p>• Designed user-friendly ServiceNow request forms by collaborating with cross-functional stakeholders to translate business requirements into clear, usable solutions, reducing friction during request submission.</p>
