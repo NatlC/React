@@ -164,7 +164,8 @@ const Home = () => {
               <p>• Designed user-friendly ServiceNow request forms by collaborating with cross-functional stakeholders to translate business requirements into clear, usable solutions, reducing friction during request submission.</p>
               <p>• Authored and maintained Business Requirements Documents (BRDs), leading stakeholder meetings, reviews, and demos to refine requirements and iteratively improve catalog items.</p>
 
-              <h4 style="margin-top: 24px;">Incident Analytics &amp; Automation</h4>
+              <br></br>
+              <h4>Incident Analytics &amp; Automation</h4>
               <p>• Analyzed ServiceNow incident data using Excel (PivotTables, Power Query) to identify recurring issues and trends, supporting the creation of knowledge base articles and problem records.</p>
               <p>• Built an offline Python-based data processing pipeline to preprocess high-volume ServiceNow incident data, automating manual ticket review while operating in restricted, no-outbound-connectivity environments to enable privacy-conscious handling and LLM-ready datasets.</p>
         </div>
