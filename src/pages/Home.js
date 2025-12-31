@@ -156,7 +156,7 @@ const Home = () => {
       </section>
 
       <section className="section-container">
-        <img src={newestexperienceCityTorontoImage} alt="IT Trainee, COT" className="section-image" />
+        <img src={experienceCityTorontoImage} alt="IT Trainee, COT" className="section-image" />
         <div className="section-text">
           <h3>IT Trainee - Request and Incident management (ITSM), City of Toronto, Toronto, ON, May 2025 – Dec 2025</h3>
             <h4>ServiceNow Catalog &amp; Development</h4>
