@@ -5,7 +5,6 @@ import bannerImage3 from '../images/mosharraf-hossain-4oihEi2cPPA-unsplash.jpg';
 import educationImage from '../images/education logo.png';
 import experienceFGFBrandsImage from '../images/fgf.jpg';
 import experienceCityTorontoImage from '../images/toronto-logo.png';
-import newestexperienceCityTorontoImage from '../images/ai-toronto-logo.png'
 import experienceBayviewGlenImage from '../images/bayview_glen_logo.png';
 import experienceIdeologicalSystemsImage from '../images/idea.png';
 import experienceQuadientCanadaImage from '../images/quadientLogo.png';
