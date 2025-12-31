@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React/static/css/main.3e651364.css",
-    "main.js": "/React/static/js/main.412a5ad6.js",
+    "main.js": "/React/static/js/main.8bed6c10.js",
     "static/media/Nathan_Album_Cover.jpg": "/React/static/media/Nathan_Album_Cover.726f99dfe01d8d63b10c.jpg",
     "static/media/mosharraf-hossain-4oihEi2cPPA-unsplash.jpg": "/React/static/media/mosharraf-hossain-4oihEi2cPPA-unsplash.1074c6d3efca444002b8.jpg",
     "static/media/glacier2.jpg": "/React/static/media/glacier2.294ac2924d5e8df28d7f.jpg",
@@ -17,10 +17,10 @@
     "static/media/clickTrim.mp3": "/React/static/media/clickTrim.69f31d971d95c5133cfc.mp3",
     "index.html": "/React/index.html",
     "main.3e651364.css.map": "/React/static/css/main.3e651364.css.map",
-    "main.412a5ad6.js.map": "/React/static/js/main.412a5ad6.js.map"
+    "main.8bed6c10.js.map": "/React/static/js/main.8bed6c10.js.map"
   },
   "entrypoints": [
     "static/css/main.3e651364.css",
-    "static/js/main.412a5ad6.js"
+    "static/js/main.8bed6c10.js"
   ]
 }
