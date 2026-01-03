@@ -11,17 +11,24 @@ const About = () => {
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            Fourth-year Computer Science Co-op student at TMU. As an IT Technician for one year,
-            I diagnosed hardware and software issues, managed user accounts, monitored SLAs, 
-            trained users, and collaborated with infrastructure and procurement for expansion projects.
+            I’m a ServiceNow-focused IT professional with hands-on experience supporting IT Service Management (ITSM) functions, 
+            including request fulfillment, incident analysis, and problem management.
           </p>
           <p>
-            Proficient in programming languages: Python, Java, and C. Web development languages: 
-            HTML, CSS, Bootstrap, Javascript, Jquery, Perl, PHP, MySQL, Classic ASP, Python/CGI, and Ruby/CGI. 
-            Adobe Photoshop.
+            In my most current role, I build and enhance ServiceNow catalog and request solutions in DEV, supporting testing through 
+            QA and UAT before production release. I work closely with stakeholders to translate requirements into clear, usable 
+            request forms and structured workflows, with an emphasis on usability, consistency, and maintainability.
           </p>
           <p>
-            I am always learning new technologies and contributing to the industry.
+            Alongside platform work, I have a strong interest in automation and data processing. I’ve built an offline Python-based 
+            pipeline to preprocess and sanitize ServiceNow incident data in restricted, privacy-conscious environments, preparing 
+            datasets for downstream analysis and AI-assisted review. This experience has strengthened my approach to problem-solving, 
+            data quality, and working within real-world security constraints.
+          </p>
+          <p>
+            I enjoy roles that sit at the intersection of systems, process, and code — where thoughtful design and automation 
+            can meaningfully improve how services are delivered and supported. I’m particularly interested in opportunities 
+            related to ServiceNow development, ITSM platforms, and automation-focused IT or early-career software roles.
           </p>
         </div>
       </div>
